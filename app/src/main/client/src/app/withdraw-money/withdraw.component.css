@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 500px;
+}
+
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+}
+.center{
+  text-align: center;
+}
+
+.register{
+  display: inline-block;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+h1{
+  color:#673ab7;
+  font-weight: bold;
+}
+
+

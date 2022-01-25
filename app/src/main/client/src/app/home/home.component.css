@@ -1,0 +1,61 @@
+mat-grid-tile {
+  background: white;
+
+}
+mat-grid-list{
+
+}
+.container{
+
+}
+.center{
+  display: flex;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.content{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.margin{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+
+.button{
+  min-width: 300px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+h1{
+  font-size: 60px;
+  color: #673ab7;
+}
+table {
+  width: 100%;
+}
+.margin-table{
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.color{
+  color:#ffd740 ;
+}
+
+

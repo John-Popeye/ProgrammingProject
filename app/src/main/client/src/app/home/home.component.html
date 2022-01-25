@@ -1,0 +1,68 @@
+
+<mat-toolbar color="primary">
+  <span class="center">My Application</span>
+  <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">attach_money</mat-icon>
+  <span class="example-spacer"></span>
+  <button mat-raised-button color="accent" (click)="logOut()">Log Out</button>
+</mat-toolbar>
+<div class="header">
+<h1>Welcome to the <b class="color">BeeBank</b></h1>
+</div>
+  <div class="content ">
+
+    <div class="col-3 margin">
+      <mat-card>
+        <button class="button" mat-raised-button color="primary" (click)="goToDeposit()" type="button">Make a Deposit</button>
+      </mat-card>
+    </div>
+    <div class="col-3 margin">
+      <mat-card>
+        <button class="button" mat-raised-button color="primary" (click)="goToWithdraw()" type="button">Withdraw</button>
+      </mat-card>
+    </div>
+    <div class="col-3 margin">
+      <mat-card>
+        <button class="button" mat-raised-button color="primary" (click)="goToCreateAccount()" type="button">Create Account</button>
+      </mat-card>
+    </div>
+    <div class="col-3 margin">
+      <mat-card>
+        <button class="button" mat-raised-button color="primary" (click)="goToTransfer()" type="button">Transfer</button>
+      </mat-card>
+    </div>
+  </div>
+<div class="margin-table">
+  <table mat-table [dataSource]="accounts">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="type">
+      <th mat-header-cell *matHeaderCellDef> Type </th>
+      <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="currentValue">
+      <th mat-header-cell *matHeaderCellDef> currentValue </th>
+      <td mat-cell *matCellDef="let element"> {{element.currentValue}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+
+  </table>
+
+
+</div>
+
+
